@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Finesse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+
+            <ul>
+                <li><a href="#"><h3>Home</h3></a></li>
+                <li><a href="#"><h3>Blog</h3></a></li>
+                <li><a href="#" class="about"><h3>About us</h3></a></li>
+                <li><a href="#" class="contact-us "><h3>Contact us</h3></a></li>
+            </ul>
+            <button type="button" on click="alert"><a href="#">Subscribe</a></button>
+
+
+
+    </header>
+    <main>
+
+        <div id="write">
+            <h4>Choosing your own creative, entertaining, innovative and stylish lifestyle</h4>
+        </div>
+        <hr>
+        <div class="img-container">
+            <img src="./contact us image centered image.png" alt="">
+        </div>
+         <h3 class="contact">CONTACT US</h3>
+        <div id="message">
+             <h4>Would you like to create a stylish experience?</h4>
+             <p>Would you like to get direct tips from us?</p>
+             <p>If you have any question, request for feedback,</p>
+             <p>fill in your details below and we'll get to you as soon as possible</p>
+        </div>
+
+        <section class="form-section">
+            <div class="container">
+            <form action="action_page">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="your name...">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="enter email">
+
+                <label for="subject">Subject</label>
+                <textarea name="subject"
+                    id="subject" placeholder="Write something... " style="height: 50px;">
+                </textarea>
+
+                <label for="message">Message</label>
+                <textarea name="message"
+                    id="mess" placeholder="Write something... ">
+                </textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+        <div class="container">
+            <img src="./contact us below right image.png" alt="" width="100%" height="auto">
+        </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; DailyFinesse website </p>
+        <div>
+            <span>Codevixen academy</span>
+            <small id="date"></small>
+        </div>
+
+    </footer>
+    <script>
+        document.getElementById('date').innerHTML = new Date().getFullYear();
+    </script>
+
+
+</body>
+</html>
